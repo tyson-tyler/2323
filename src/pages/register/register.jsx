@@ -68,7 +68,7 @@ const Register = () => {
               <label className="text-sm font-semibold">Name</label>
               <input
                 type="text"
-                className="flex h-12 outline-none w-full rounded-md border border-slate-200 bg-gray-800 text-white px-3 py-2 text-sm"
+                className="flex h-12 outline-none w-full rounded-md border  bg-gray-800 text-white px-3 py-2 text-sm"
               />
             </div>
             <div className="space-y-2">
@@ -78,7 +78,7 @@ const Register = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex h-12 outline-none w-full rounded-md border border-slate-200 bg-gray-800 text-white px-3 py-2 text-sm"
+                className="flex h-12 outline-none w-full rounded-md border  bg-gray-800 text-white px-3 py-2 text-sm"
               />
             </div>
             <div className="space-y-2">
@@ -89,7 +89,7 @@ const Register = () => {
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="flex h-12 outline-none w-full rounded-md border border-slate-200 bg-gray-800 text-white px-3 py-2 text-sm"
+                className="flex h-12 outline-none w-full rounded-md  bg-gray-800 text-white px-3 py-2 text-sm"
               />
             </div>
             <div className="space-y-2">
@@ -101,7 +101,7 @@ const Register = () => {
                 required
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                className="flex h-12 outline-none w-full rounded-md border border-slate-200 bg-gray-800 text-white px-3 py-2 text-sm"
+                className="flex h-12 outline-none w-full rounded-md border  bg-gray-800 text-white px-3 py-2 text-sm"
               />
             </div>
 
