@@ -101,7 +101,7 @@ const Register = () => {
                 required
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                className="flex h-12 outline-none w-full rounded-md border  bg-gray-800 text-white px-3 py-2 text-sm"
+                className="flex h-12 outline-none w-full rounded-md   bg-gray-800 text-white px-3 py-2 text-sm"
               />
             </div>
 
