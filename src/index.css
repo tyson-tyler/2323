@@ -4,8 +4,8 @@
 @tailwind utilities;
 
 body {
-  background-color: black;
-  color: white;
+  background-color: gainsboro;
+  color: black;
 }
 
 body {
@@ -17,4 +17,49 @@ body {
     format("woff2");
   unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F,
     U+FE2E-FE2F;
+}
+.logo {
+  font: normal normal normal 32px/44px Mongolian Baiti;
+  top: 40px;
+  left: 200px;
+  width: 260px;
+  height: 80px;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+}
+.sidebar {
+  width: 280px;
+  height: 707px;
+  top: 120px;
+  left: 100px;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+}
+.card {
+  top: 150px;
+  left: 490px;
+  width: 820px;
+  height: 620px;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+}
+.right {
+  width: 280px;
+  height: 707px;
+  top: 180px;
+  right: 100px;
+  /* UI Properties */
+
+  border-radius: 10px;
+  opacity: 1;
+}
+.banner {
+  width: 244px;
+  height: 126px;
 }

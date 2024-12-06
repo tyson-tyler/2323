@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { signuserAccount } from "../../firebase/auth";
 import { useAuth } from "../../context/authcontext";
 import { Navigate } from "react-router-dom";
