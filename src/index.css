@@ -63,3 +63,6 @@ body {
   width: 244px;
   height: 126px;
 }
+::-webkit-scrollbar {
+  width: 1px;
+}
