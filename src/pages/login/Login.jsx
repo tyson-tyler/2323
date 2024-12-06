@@ -100,7 +100,7 @@ const Login = () => {
         </div>
       </section>
 
-      <div className="h-screen flex-1 md:hidden lg:flex">
+      <div className="h-screen flex-1 hidden lg:flex">
         <img
           src="https://picsum.photos/1920/1080?random"
           alt="Login Background"

@@ -22,7 +22,7 @@ const Register = () => {
     <div className="flex h-screen w-full">
       {userLoggedIn && <Navigate to={"/"} replace={true} />}
 
-      <div className="h-screen flex-1 md:hidden lg:flex">
+      <div className="h-screen flex-1 hidden lg:flex">
         <img
           src="https://picsum.photos/1920/1080?random"
           alt=""
