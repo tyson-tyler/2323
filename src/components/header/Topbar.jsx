@@ -2,11 +2,11 @@ import Logo from "../../assets/search.svg";
 import Mad from "../../assets/mad.svg";
 const Topbar = () => {
   return (
-    <div className="h-[80px] w-full flex justify-around">
+    <div className="h-[90px] w-full flex justify-around">
       <div className="logo text-black text-center justify-center items-center flex text-2xl font-semibold">
         Logo
       </div>
-      <div className="w-[620px] h-[80px] bg-white rounded-[10px] justify-between flex p-4">
+      <div className="w-[620px] h-[80px] mb-4 bg-white rounded-[10px] justify-between flex p-4">
         <div className="flex">
           <div className="p-2 flex justify-center items-center">
             <img src={Logo} alt="" className="w-20px h-20px" />
