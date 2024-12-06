@@ -13,7 +13,6 @@ const Register = () => {
 
   // Function to check password strength
   const isPasswordStrong = (password) => {
-    // Example criteria: at least 8 characters, one uppercase, one lowercase, one number, one special character
     const strongPasswordRegex =
       /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
     return strongPasswordRegex.test(password);
@@ -21,15 +20,13 @@ const Register = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    setErrorMessage(""); // Reset error message
+    setErrorMessage("");
 
-    // Check if passwords match
     if (password !== confirmPassword) {
       setErrorMessage("Passwords do not match.");
       return;
     }
 
-    // Check password strength
     if (!isPasswordStrong(password)) {
       setErrorMessage(
         "Password is weak. It must be at least 8 characters long and include uppercase, lowercase, a number, and a special character."
@@ -37,13 +34,12 @@ const Register = () => {
       return;
     }
 
-    // If validations pass, proceed with account creation
     try {
       setRegister(true);
       await createUserAccount(email, password);
     } catch (error) {
       setErrorMessage(error.message || "Failed to create an account.");
-      setRegister(false); // Allow the user to retry
+      setRegister(false);
     }
   };
 
@@ -60,7 +56,7 @@ const Register = () => {
       </div>
       <section className="h-screen flex-1 flex justify-center items-center flex-col py-10">
         <div className="flex-col sm:w-[450px] flex justify-center items-center">
-          <h1 className="text-xl font- md:text-3xl pt-5 sm:pt-12">
+          <h1 className="text-xl md:text-3xl pt-5 sm:pt-12">
             Hello, User to your account
           </h1>
           <p className="text-gray-700 font-light text-sm mt-5">
@@ -72,7 +68,7 @@ const Register = () => {
               <label className="text-sm font-semibold">Name</label>
               <input
                 type="text"
-                className="flex h-12 outline-none w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm"
+                className="flex h-12 outline-none w-full rounded-md border border-slate-200 bg-gray-800 text-white px-3 py-2 text-sm"
               />
             </div>
             <div className="space-y-2">
@@ -82,7 +78,7 @@ const Register = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex h-12 outline-none w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm"
+                className="flex h-12 outline-none w-full rounded-md border border-slate-200 bg-gray-800 text-white px-3 py-2 text-sm"
               />
             </div>
             <div className="space-y-2">
@@ -93,7 +89,7 @@ const Register = () => {
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="flex h-12 outline-none w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm"
+                className="flex h-12 outline-none w-full rounded-md border border-slate-200 bg-gray-800 text-white px-3 py-2 text-sm"
               />
             </div>
             <div className="space-y-2">
@@ -105,7 +101,7 @@ const Register = () => {
                 required
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                className="flex h-12 outline-none w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm"
+                className="flex h-12 outline-none w-full rounded-md border border-slate-200 bg-gray-800 text-white px-3 py-2 text-sm"
               />
             </div>
 
